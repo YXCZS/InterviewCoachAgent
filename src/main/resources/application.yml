@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: iris-agent
+  ai:
+    deepseek:
+      api-key: sk-9370d5ea9df74a0abf60642b279e880a
+      chat:
+        options:
+          model: deepseek-chat
+server:
+  port: 8123
+  servlet:
+    context-path: /api
+app:
+  demo:
+    ai-runner:
+      enabled: true
+# springdoc-openapi
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    tags-sorter: alpha
+    operations-sorter: alpha
+  api-docs:
+    path: /v3/api-docs
+  group-configs:
+    - group: 'default'
+      paths-to-match: '/**'
+      packages-to-scan: com.yxc.irisagent.controller
+# knife4j
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+
+logging:
+  level:
+    org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor: debug
+
+
