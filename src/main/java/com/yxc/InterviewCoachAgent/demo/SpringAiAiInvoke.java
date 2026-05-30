@@ -1,4 +1,4 @@
-package com.yxc.irisagent.demo;
+package com.yxc.InterviewCoachAgent.demo;
 
 import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.ai.chat.model.ChatModel;

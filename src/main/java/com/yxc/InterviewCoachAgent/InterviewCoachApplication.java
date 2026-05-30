@@ -1,13 +1,13 @@
-package com.yxc.irisagent;
+package com.yxc.InterviewCoachAgent;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class IrisAgentApplication {
+public class InterviewCoachApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(IrisAgentApplication.class, args);
+        SpringApplication.run(InterviewCoachApplication.class, args);
     }
 
 }
